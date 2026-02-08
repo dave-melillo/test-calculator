@@ -1,0 +1,53 @@
+.calculator {
+  width: 100%;
+  max-width: 400px;
+}
+
+.buttonGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.button {
+  padding: 24px;
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 60px;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.operator {
+  font-weight: 600;
+}
+
+.clear {
+  grid-column: 1 / -1;
+  background-color: #FF3B30 !important;
+  color: white !important;
+  font-weight: 600;
+}
+
+.clear:hover {
+  background-color: #CC2E25 !important;
+  opacity: 1 !important;
+}
+
+@media (max-width: 480px) {
+  .button {
+    padding: 20px;
+    font-size: 20px;
+    min-height: 56px;
+  }
+}

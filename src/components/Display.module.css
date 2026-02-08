@@ -1,0 +1,16 @@
+.display {
+  width: 100%;
+  padding: 24px;
+  font-size: 48px;
+  font-weight: 300;
+  text-align: right;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+}
